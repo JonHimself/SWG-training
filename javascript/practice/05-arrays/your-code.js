@@ -20,16 +20,16 @@ const findMax = (arr) => {
 // Open index.html in your browser, open the JavaScript console, confirm the result.
 
 // Uncomment the code below to verify your function is working.
-console.log("findMax =====");
-var numbers = [46, 3, 40, 74, 63];
-var actual = findMax(numbers);
-console.log("[46, 3, 40, 74, 63] -> expected: 74, actual: %s", actual);
-numbers = [3, 3, 3, 3];
-actual = findMax(numbers);
-console.log("[3, 3, 3, 3] -> expected: 3, actual: %s", actual);
-numbers = [-1];
-actual = findMax(numbers);
-console.log("[-1] -> expected: -1, actual: %s", actual);
+// console.log("findMax =====");
+// var numbers = [46, 3, 40, 74, 63];
+// var actual = findMax(numbers);
+// console.log("[46, 3, 40, 74, 63] -> expected: 74, actual: %s", actual);
+// numbers = [3, 3, 3, 3];
+// actual = findMax(numbers);
+// console.log("[3, 3, 3, 3] -> expected: 3, actual: %s", actual);
+// numbers = [-1];
+// actual = findMax(numbers);
+// console.log("[-1] -> expected: -1, actual: %s", actual);
 
 // 2. COMBINE ARRAYS
 // =================
@@ -46,13 +46,13 @@ const combine = (arr1, arr2) => {
 };
 
 // Uncomment the code below to verify your function is working.
-console.log("combine =====");
-var merged = combine(["Oak", "Maple", "Birch"], ["Hydrogen", "Helium"]);
-console.log("expected: Oak,Maple,Birch,Hydrogen,Helium\nactual: %s", merged);
-merged = combine([12.5, 3, 855], [true, false, true]);
-console.log("expected: 12.5,3,855,true,false,true\nactual: %s", merged);
-merged = combine(["Saturn"], ["Black Lab", "Borzoi", "Pug"]);
-console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
+// console.log("combine =====");
+// var merged = combine(["Oak", "Maple", "Birch"], ["Hydrogen", "Helium"]);
+// console.log("expected: Oak,Maple,Birch,Hydrogen,Helium\nactual: %s", merged);
+// merged = combine([12.5, 3, 855], [true, false, true]);
+// console.log("expected: 12.5,3,855,true,false,true\nactual: %s", merged);
+// merged = combine(["Saturn"], ["Black Lab", "Borzoi", "Pug"]);
+// console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
 
 // 3. CHALLENGE: SUBTRACT AN ARRAY
 // ====================
@@ -65,7 +65,7 @@ console.log("expected: Saturn,Black Lab,Borzoi,Pug\nactual: %s", merged);
 
 const subtractArray = (arr1, arr2) => {
   let value = arr1.filter((value, i) => !arr2.includes(arr1[i]));
-  console.log(value);
+  console.log("Log prior to returning value:", value);
   return value;
 };
 
