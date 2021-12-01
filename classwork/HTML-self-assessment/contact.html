@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header><h1>Chateu Borgosie</h1></header>
+    <hr />
+    <nav>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="menu.html">Menu</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </nav>
+    <hr />
+    <form action="submit.html" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" /> <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" /> <br />
+      <label for="phone">Phone:</label>
+      <input type="text" name="phone" id="phone" /> <br />
+      <label for="reason">Reason for Inquiry:</label>
+      <select name="reason" id="reason">
+        <option value="default-catering" selected>Catering</option>
+        <option value="privateParty">Private Party</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+      <br />
+      <label for="additional">Additional Information:</label> <br />
+      <textarea name="info" id="additional"></textarea> <br />
+      <label for="visitation">Have you been to the resturant?</label>
+      <input type="radio" name="visit" id="no" value="no" />
+      <label for="no">No</label>
+      <input type="radio" name="visit" id="yes" value="yes" />
+      <label for="yes">Yes</label> <br />
+      <label for="contact">Best days to contact you?</label>
+      <input type="checkbox" name="day" id="m" value="monday" />
+      <label for="m">M</label>
+      <input type="checkbox" name="day" id="t" value="tuesday" />
+      <label for="t">T</label>
+      <input type="checkbox" name="day" id="w" value="wednesday" />
+      <label for="w">W</label>
+      <input type="checkbox" name="day" id="th" value="thursday" />
+      <label for="th">Th</label>
+      <input type="checkbox" name="day" id="f" value="friday" />
+      <label for="f">F</label> <br />
+      <input type="submit" value="Send Request" />
+    </form>
+    <footer>
+      <hr />
+      <p>Papa Guipelle Rd, Montegu, Alabama, 78965</p>
+      <p>874-965-1414</p>
+    </footer>
+  </body>
+</html>
