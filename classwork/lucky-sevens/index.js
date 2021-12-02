@@ -6,6 +6,8 @@ const highestAmount = document.getElementById("highest-amount");
 const highestRoll = document.getElementById("roll-at-highest");
 const button = document.getElementById("play");
 const playAgain = document.getElementById("play-again");
+const rows = document.querySelectorAll("tr");
+const data = document.querySelectorAll("td");
 
 const luckySevens = async (e) => {
   e.preventDefault();
@@ -47,7 +49,13 @@ const luckySevens = async (e) => {
   highestRoll.innerText =
     highestIndex === 0 ? "You never had a winning roll" : highestIndex;
 
-  table.setAttribute("style", "");
+  table.setAttribute("style", "margin: 0 auto; border: 1px solid black");
+  rows.forEach((row) =>
+    row.setAttribute("style", "margin: 0 auto; border: 1px solid black")
+  );
+  data.forEach((dataset) =>
+    dataset.setAttribute("style", "margin: 0 auto; border: 1px solid black")
+  );
   playAgain.setAttribute("style", "");
 };
 
