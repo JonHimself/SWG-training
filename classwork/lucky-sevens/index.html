@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky Sevens</title>
+  </head>
+  <body>
+    <section>
+      <article>
+        <ol>
+          <li>As long as there is money, play the game</li>
+          <li>
+            Each round, the program rolls a virtual pair of dice for the user
+          </li>
+          <ul>
+            <li>if the sum of the 2 dice is equal to 7, the player wins $4</li>
+            <li>Otherwise, the player loses $1</li>
+          </ul>
+        </ol>
+      </article>
+    </section>
+    <form>
+      <h1>Lucky Sevens</h1>
+      <label for="bet">Starting Bet:</label>
+      <input type="number" name="bet" id="bet" placeholder="$0.00" />
+      <div>
+        <button type="submit" id="play">Play</button>
+      </div>
+    </form>
+    <table id="table" style="display: none">
+      <thead>
+        <th>
+          <h2>Results</h2>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Starting Bet</td>
+          <td id="start"></td>
+        </tr>
+        <tr>
+          <td>Total Rolls Before Going Broke</td>
+          <td id="total-rolls"></td>
+        </tr>
+        <tr>
+          <td>Highest Amount Won</td>
+          <td id="highest-amount"></td>
+        </tr>
+        <tr>
+          <td>Roll Count at Highest Amount Won</td>
+          <td id="roll-at-highest"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script type="text/JavaScript" src="index.js"></script>
+  </body>
+</html>
