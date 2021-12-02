@@ -57,6 +57,7 @@ const luckySevens = async (e) => {
     dataset.setAttribute("style", "margin: 0 auto; border: 1px solid black")
   );
   playAgain.setAttribute("style", "");
+  startingBet.value = "";
 };
 
 const diceRoll = () => {
