@@ -5,6 +5,7 @@ const rolls = document.getElementById("total-rolls");
 const highestAmount = document.getElementById("highest-amount");
 const highestRoll = document.getElementById("roll-at-highest");
 const button = document.getElementById("play");
+const playAgain = document.getElementById("play-again");
 
 const luckySevens = async (e) => {
   e.preventDefault();
@@ -16,7 +17,6 @@ const luckySevens = async (e) => {
   let highestReward = null;
 
   for (let i = 0; money !== 0; i++) {
-    console.log(initialSum);
     let result = await diceRoll();
 
     if (money <= 0) {
@@ -40,12 +40,15 @@ const luckySevens = async (e) => {
     highestIndex = betCollector.indexOf(Math.max(...betCollector)) + 1;
   }
 
-  betCell.innerText = initialSum;
+  betCell.innerText = `$${initialSum}.00`;
   rolls.innerText = rollCount;
-  highestAmount.innerText = highestReward;
-  highestRoll.innerText = highestIndex;
+  highestAmount.innerText =
+    highestReward === 0 ? "You never won" : `$${highestReward}.00`;
+  highestRoll.innerText =
+    highestIndex === 0 ? "You never had a winning roll" : highestIndex;
 
   table.setAttribute("style", "");
+  playAgain.setAttribute("style", "");
 };
 
 const diceRoll = () => {
