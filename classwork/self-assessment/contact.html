@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header><h1>Chateu Borgosie</h1></header>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <div class="navbar-nav">
+        <button class="btn btn-sm mr-2 bg-light">
+          <a class="nav-item nav-link" href="index.html"
+            ><i class="fas fa-home"></i
+          ></a>
+        </button>
+        <button class="btn btn-sm mr-2 btn-outline-secondary" type="button">
+          <a class="nav-item nav-link link" href="menu.html">Menu</a>
+        </button>
+        <button class="btn btn-sm mr-2 btn-outline-secondary" type="button">
+          <a class="nav-item nav-link link active" href="contact.html"
+            >Contact Us</a
+          >
+        </button>
+      </div>
+    </nav>
+
+    <form name="form" class="col-lg-6 col-md-9 col mt-2">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="form-control text" required />
+        <div class="invalid-feedback">You must have name</div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control text"
+          required
+        />
+        <div class="invalid-feedback">You must have an email</div>
+        <label for="phone">Phone:</label>
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          class="form-control text"
+          required
+        />
+        <div class="invalid-feedback">You must have a phone number</div>
+      </div>
+      <div class="form-group">
+        <label for="reason">Reason for Inquiry:</label>
+        <select name="reason" id="reason" class="form-control">
+          <option value="default-catering" selected>Catering</option>
+          <option value="privateParty">Private Party</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="additional">Additional Information:</label>
+        <textarea name="info" id="additional" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-check-label">
+          Have you been to the resturant?
+        </label>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input
+            type="radio"
+            id="no"
+            name="customRadioInline1"
+            class="custom-control-input check"
+          />
+          <label class="custom-control-label" for="no">No</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input
+            type="radio"
+            id="yes"
+            name="customRadioInline1"
+            class="custom-control-input check"
+          />
+          <label class="custom-control-label" for="yes">Yes</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-check-label"> Best days to contact you? </label>
+        <div class="custom-control custom-checkbox custom-control-inline">
+          <input
+            type="checkbox"
+            class="custom-control-input check"
+            id="m"
+            value="monday"
+          />
+          <label class="custom-control-label" for="m">M</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+          <input
+            type="checkbox"
+            class="custom-control-input check"
+            id="t"
+            value="tuesday"
+          />
+          <label class="custom-control-label" for="t">T</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+          <input
+            type="checkbox"
+            class="custom-control-input check"
+            id="w"
+            value="wednesday"
+          />
+          <label class="custom-control-label" for="w">W</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+          <input
+            type="checkbox"
+            class="custom-control-input check"
+            id="th"
+            value="thursday"
+          />
+          <label class="custom-control-label" for="th">TH</label>
+        </div>
+        <div class="custom-control custom-checkbox custom-control-inline">
+          <input
+            type="checkbox"
+            class="custom-control-input check"
+            id="f"
+            value="friday"
+          />
+          <label class="custom-control-label" for="f">F</label>
+        </div>
+      </div>
+      <button class="btn" id="form-btn" type="submit">Submit</button>
+      <button class="btn" id="form-btn2" type="submit">Reset</button>
+    </form>
+    <p id="error" style="display: none">
+      ERROR: Data Invalid. Check validation message(s) above.
+    </p>
+    <footer>
+      <hr />
+      <p>Papa Guipelle Rd, Montegu, Alabama, 78965</p>
+      <p>874-965-1414</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
