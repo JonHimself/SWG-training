@@ -19,13 +19,8 @@ const submit = (e) => {
   }
 };
 
-const resetForm = (e) => {
-  e.preventDefault();
-  form.className = "needs-validation col-lg-6 col-md-9 col";
-  error.setAttribute("style", "display:none");
-  inputs.forEach((input) => (input.value = ""));
-  checks.forEach((check) => (check.checked = false));
-  area.value = "";
+const resetForm = () => {
+  window.location.reload();
 };
 
 button.addEventListener("click", submit);
