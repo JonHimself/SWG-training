@@ -2,9 +2,6 @@ const button = document.getElementById("form-btn");
 const reset = document.getElementById("form-btn2");
 const form = document.forms["form"];
 const error = document.getElementById("error");
-const inputs = document.querySelectorAll(".text");
-const checks = document.querySelectorAll(".check");
-const area = document.querySelector("textarea");
 
 const submit = (e) => {
   e.preventDefault();
