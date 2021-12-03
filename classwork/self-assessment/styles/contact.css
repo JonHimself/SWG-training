@@ -16,3 +16,7 @@ footer {
   color: red;
   font-size: 2rem;
 }
+
+form {
+  margin: 0 auto !important;
+}
