@@ -1,0 +1,20 @@
+{
+  "name": "SWG-training",
+  "version": "1.0.0",
+  "description": "The files in this repository are provided for use in the online course, Introduction to Web Development, offered through The Software Guild, a Wiley brand.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonHimself/SWG-training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonHimself/SWG-training/issues"
+  },
+  "homepage": "https://github.com/JonHimself/SWG-training#readme"
+}
